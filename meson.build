@@ -36,10 +36,6 @@ compiler_gcc = 'gcc'
 compiler_clang = 'clang'
 compiler_msvc = 'msvc'
 
-if cc_id == compiler_msvc
-  error('MSVC 2019 compiler is not supported and not tested in Zstd')
-endif
-
 zstd_version = meson.project_version()
 zstd_libversion = zstd_version
 
